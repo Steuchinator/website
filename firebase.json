@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "jonahhillfanclub",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
