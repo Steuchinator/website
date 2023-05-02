@@ -1,4 +1,4 @@
-const gallery = document.getElementById("gooberpage");
+const gooberpage = document.getElementById("gooberpage");
 
 window.onmousemove = e => {
   const mouseX = e.clientX,
@@ -7,13 +7,13 @@ window.onmousemove = e => {
   const xDecimal = mouseX / window.innerWidth,
         yDecimal = mouseY / window.innerHeight;
   
-  const maxX = gallery.offsetWidth - window.innerWidth,
-        maxY = gallery.offsetHeight - window.innerHeight;
+  const maxX = gooberpage.offsetWidth - window.innerWidth,
+        maxY = gooberpage.offsetHeight - window.innerHeight;
   
   const panX = maxX * xDecimal * -1,
         panY = maxY * yDecimal * -1;
   
-        gallery.animate({
+        gooberpage.animate({
     transform: `translate(${panX}px, ${panY}px)`
   }, {
     duration: 4000,
